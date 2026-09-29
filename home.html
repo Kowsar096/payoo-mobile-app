@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
 </head>
-<body>
-    <h1>Home page</h1>
+
+<body class="bg-[#F4F5F7] h-[100vh]">
+
+    <!-- Navbar -->
+    <div
+        class="min-h-[50px] max-w-lg mx-auto flex justify-between items-center border-b-1  bg-white border-gray-400  p-3">
+        <div class='flex'>
+            <img src="./assets/Group.png" class="h-[50px]" alt="">
+            <div class="ml-3">
+                <h2 class="font-bold">$ <span>45000</span></h2>
+                <p class=" text-[#08080880]">Available Balance</p>
+            </div>
+        </div>
+        <div>
+            <button class="btn  text-[#08080880]"> <i class="fa-solid fa-arrow-right-from-bracket rotate-180"></i>Log
+                Out</button>
+        </div>
+    </div>
+
+    <!-- Welcome -->
+    <div class="max-w-lg mx-auto bg-white rounded-b-2xl  p-2">
+        <div class=" mt-8">
+            <h1 class="text-2xl font-bold">🔥 Welcome to Payooo!</h1>
+            <p class="text-[#08080880]">Enjoy easy and convenient financial services with us. Cashout charge is low and
+            </p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 min-h-[200px]  p-3">
+            <div class="border-2 border-gray-300 text-center p-3 rounded-2xl">
+                <img class="mx-auto" src="./assets/wallet1.png" alt="">
+                <h2>Add Money</h2>
+            </div>
+            <div class="border-2 border-gray-300 text-center p-3 rounded-2xl">
+                <img class="mx-auto" src="./assets/send1.png" alt="">
+                <h2>Cashout</h2>
+            </div>
+            <div class="border-2 border-gray-300 text-center p-3 rounded-2xl">
+                <img class="mx-auto" src="./assets/money1.png" alt="">
+                <h2>Transfer Money</h2>
+            </div>
+            <div class="border-2 border-gray-300 text-center p-3 rounded-2xl">
+                <img class="mx-auto" src="./assets/bonus1.png" alt="">
+                <h2>Get Bonus</h2>
+            </div>
+            <div class="border-2 border-gray-300 text-center p-3 rounded-2xl">
+                <img class="mx-auto" src="./assets/purse1.png" alt="">
+                <h2>Pay Bill</h2>
+            </div>
+            <div class="border-2 border-gray-300 text-center p-3 rounded-2xl">
+                <img class="mx-auto" src="./assets/transaction1.png" alt="">
+                <h2>Transactions</h2>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- from section -->
+    <div class="max-w-lg mx-auto">
+        <p>Select a bank</p>
+        <select class="select  bg-white mt-3 rounded-3xl ">
+            <option>VScode</option>
+            <option>VScode fork</option>
+            <option>Another VScode fork</option>
+        </select>
+
+    </div>
+
 </body>
+
 </html>
